@@ -24,35 +24,6 @@
     </main>
 
 
-    <script> 
-    const video = document.querySelector("video");
-    const button = document.getElementById("playButton");
-    const prueba = document.getElementById('muteButton');
-
-    function MediaPlayer(config){
-      this.media = config.el
-    }
-
-    MediaPlayer.prototype.play = function() {
-     this.media.play();
-    }
-    MediaPlayer.prototype.pause = function(){
-      this.media.pause();
-    }
-
-    const player = new MediaPlayer({ el: video });
-    let valor = "play"
-
-    button.onclick = () => {
-      if(valor == 'play') {
-        player.play()
-        valor ='pause'
-      }else{
-        player.pause()
-        valor = 'play'
-      }
-    } 
-    console.log(player)
-    </script>
+    <script type="module" defer src="./assets/index.js"></script>
   </body>
 </html>
